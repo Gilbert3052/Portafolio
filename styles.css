@@ -1,0 +1,573 @@
+@import url('https://rsms.me/inter/inter.css');
+:root {
+    --Darkbg:  #1f1d2c;
+    --fontColor:  #fff;
+    --Amarillo: #F1A600;
+    --lightDarkbg: rgb(36, 38, 53);
+    --gray: #e5e5e5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Darkbg);
+    color: var(--gray);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.oneGap {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.Yellow{
+    color: var(--Amarillo);
+}
+
+.subTitle {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.subSection {
+    font-size: 18px;
+    color: var(--fontColor);
+}
+
+.subSectionFont {
+    font-size: 12px;
+}
+
+/*
+    ### nav ###
+*/
+
+.nav  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 1rem;       
+    position: fixed; 
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(45, 45, 67, 0.5);
+}
+
+.menu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 1em;
+    background-color: rgb(36, 38, 53, 0.5);
+
+    transform: translateX(200%);
+    transition: transform 0.5s;
+}
+
+.nav a   {
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+.icon__menu {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.show_menu {
+    transform: translateX(0);
+}
+
+
+/*
+    ### Header ###
+*/
+.headerVector {
+    padding: 40px 0;
+    
+}
+.header {
+    padding: 3em;
+    position: relative;
+}
+
+.headerName h1 {
+    font-size: 50px;
+    color: var(--fontColor);
+}
+
+.mobileImg {
+    display: block;
+    margin: auto;
+}
+
+.desktopImg {
+    display: none;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header_icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+    ### About ###
+*/
+
+.About {
+    padding: 40px 20px;
+    background-color: var(--lightDarkbg);
+}
+
+.AboutImage img {
+    width: 100%;
+    height: 100%;
+}
+.AboutImage {
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin: auto;
+}
+
+.aboutIcons {
+    padding: 20px;
+    gap: 2em;
+}
+
+/*
+    ### Experience ###
+*/
+
+.Experience {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.works {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.workInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.workInfoYears {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience_icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.experience_icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    ### Skills ###
+*/
+
+.Skills {
+    padding: 40px 20px;
+    background: linear-gradient(to right, var(--lightDarkbg) 0%, var(--lightDarkbg) 50%, var(--Darkbg) 50%, var(--Darkbg) 100%);
+}
+
+.skillsOrdered {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 1.5em 0px;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skill p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.skill h3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*
+    ### Portfolio ###
+*/
+
+.portafolio {
+    padding: 40px 0px;
+}
+
+.portfolioImg {
+    padding: 20px 0px;
+    display: grid;
+    gap: 3em;
+}
+
+.Project {
+    width: 300px;
+    height: 220px;
+    display: block;
+    margin: auto;
+}
+
+.ProjectImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.vector2{
+    width: 380px;
+    height: 240px;
+    position: absolute;
+    margin:0 ;
+    padding-top: 1em;
+}
+
+/*
+    ### Contact ###
+*/
+
+.contact {
+    padding: 40px 0px;
+    background-color: var(--lightDarkbg);
+}
+
+.contacts {
+    display: grid;
+    gap: 3em;
+    padding: 2em;
+}
+
+.contactElem {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.contact_icon img {
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    font-size: 12px;
+    color: var(--gray);
+    padding: 2em;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .headerName h1 {
+        font-size: 60px;
+    }
+
+    .subTitle {
+        font-size: 40px;
+    }
+
+    .mobileImg {
+        display: none;
+    }
+    
+    .desktopImg {
+        display: block;
+        margin: auto;
+    }
+    
+    /*
+    ### Nav ###
+    */
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        z-index: 1;
+    }
+
+    .menu {
+        position: static;
+        background-color: transparent;
+        right: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        padding: 1rem 0;
+        gap: 1em;
+        transform: translateX(0);
+    }
+
+    .navName {
+        font-size: 30px;
+        padding-right: 2em;
+        font-weight: 600;
+        width: 30%;
+    }
+
+    .icon__menu {
+        display: none;
+    }
+
+    /*
+    ### Header ###
+    */
+
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 9% 10% 10% 10%;
+        gap: 1em 5em;
+        position: relative;
+    }
+
+    .headerName {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .headerName h1 {
+        text-align: left;
+    }
+
+    .headerName p {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .headerExtraInfo {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .headerImage {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        width: 450px;
+        height: 400px;
+    }
+
+    .headerImage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .homeExperience {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0.5rem;
+    }
+
+    .iconos {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header_icon {
+        margin-right: 20px;
+    }
+
+    .header_icon img {
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    /*
+    ### About ###
+    */
+
+    .About {
+        padding: 2em 20%;
+    }
+
+    .aboutIcons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+
+    .AboutImage {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    .AboutIcon h3{
+        padding: 0.5em;
+    }
+
+    /*
+    ### Experience ###
+    */
+
+    .Experience {
+        padding: 2em 30%;
+    }
+
+    .experience_icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .workInfo {
+        justify-content: space-around;
+    }
+
+    .workName {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .workOccupation {
+        font-size: 15.5px;
+    }
+    
+    /*
+    ### Skills ###
+    */
+
+    .Skills {
+        padding: 5% 20%;
+    }
+
+    /*
+    ### Portfolio ###
+    */
+
+    .portafolio {
+        padding: 5% 10%;
+    }
+
+    .portfolioImg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Project {
+        width: 400px;
+        height: 300px;
+    }
+
+    .vector2{
+        width: 500px;
+        height: 330px;
+        position: absolute;
+        margin:0 ;
+        padding-top: 1em;
+    }
+
+    /*
+    ### Contact ###
+    */
+
+    .contact {
+        padding: 40px 20%;
+        
+    }
+
+    .contacts {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Number {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .Email {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .contactInfo {
+        display: grid;
+        gap: 0.5em;
+    }
+
+    .contact_icon {
+        width: 100px;
+        height: 100px;
+    }
+   
+    .footer{
+        background-color: var(--Darkbg);
+        padding: 4em;
+    }
+}
